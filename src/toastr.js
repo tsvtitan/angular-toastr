@@ -247,7 +247,7 @@
       function shouldExit() {
         if (options.preventDuplicates) {
           if (map.message === previousToastMessage) {
-            return true;
+            return toasts.length>0;
           } else {
             previousToastMessage = map.message;
           }
